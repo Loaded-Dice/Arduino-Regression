@@ -89,6 +89,19 @@ public:
    * @return    Number of points added.
    */
   size_t getNumberOfPoints() { return this->n; }
+  /*!
+  
+   * @brief Get the slope of the regression (a.k.a "a" in y = a*x + b)
+   * @return    Slope of the regression
+   */
+  double getSlope(){ return this->slope;}
+  double get_a(){getSlope();}
+  /*!
+   * @brief Get the intercept value of the regression and the y-axis (a.k.a. "b" in  y = a*x + b)
+   * @return    Regression intercept value with the y-axis
+   */
+  double getIntercept(){ return this->intercept;}
+  double get_b(){getIntercept();}
 };
 
 #endif // ARDUINO_REGRESSION_LINEAR2DREGRESSION_HPP
